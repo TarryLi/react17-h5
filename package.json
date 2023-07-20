@@ -1,0 +1,89 @@
+{
+  "name": "react17-h5",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": ".",
+  "scripts": {
+    "start": "nodemon --exec react-app-rewired start",
+    "report": "REACT_APP_ENV=report react-app-rewired build",
+    "build": "env-cmd -f .env.production react-app-rewired build",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "@loadable/component": "^5.12.0",
+    "antd-mobile": "^5.24.2",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "dayjs": "^1.9.6",
+    "leaflet": "^1.9.2",
+    "lodash": "^4.17.21",
+    "mobx": "^5.15.0",
+    "mobx-react": "^6.1.4",
+    "proj4leaflet": "^1.0.2",
+    "qs": "^6.11.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "web-storage-cache": "^1.1.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.17.2",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "autoprefixer": "^10.3.4",
+    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "chalk": "^4.0.0",
+    "customize-cra": "^1.0.0",
+    "css-loader": "^4.3.0",
+    "env-cmd": "^10.1.0",
+    "enzyme": "^3.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "http-proxy-middleware": "^0.20.0",
+    "less": "^4.1.0",
+    "less-loader": "^6.0.0",
+    "nodemon": "^2.0.6",
+    "postcss": "^7.0.2",
+    "postcss-pxtorem": "^5.0.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "react-app-rewired": "^2.1.6",
+    "react-scripts": "^4.0.1",
+    "style-resources-loader": "^1.3.3",
+    "webpack-bundle-analyzer": "^3.7.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  },
+  "nodemonConfig": {
+    "watch": [
+      "config-overrides.js",
+      ".env",
+      ".env.development",
+      ".env.test",
+      ".env.production"
+    ],
+    "delay": "2500"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}
